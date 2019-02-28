@@ -17,6 +17,6 @@ public class MyService extends BaseService {
 			result = night();
 		}
 		
-		System.out.println(result + "서비스시작");
+		System.out.println(result + "서비스시작 ");
 	}
 }

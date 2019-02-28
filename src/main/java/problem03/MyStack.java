@@ -5,7 +5,7 @@ public class MyStack {
 	private String[] buffer;
 
 	public MyStack( int size ) {
-		size += 2; // Main에 size=3으로 되어있는데 실행결과가 size=5이길래 +2 추가하였습니다.
+		size += 2; // Main에 size=3으로 되어있는데 실행결과가 size=5이길래 +2 추가하였습니다. 
 		
 		buffer = new String[size];
 		for(int i = 0; i < size; ++i)

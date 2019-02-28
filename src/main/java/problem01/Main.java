@@ -44,7 +44,7 @@ public class Main {
 			
 			System.out.println("");
 		}
-		// 키보드 닫기
+		// 키보드 닫기 
 		scanner.close();
 		
 		// 결과 출력
