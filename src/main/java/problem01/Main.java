@@ -19,18 +19,31 @@ public class Main {
 		
 		// 게임 시작
 		while( true ) {
-	
+			
 			System.out.print( "[" + min + "-" + max + "] 사이의 값 입력:" );
 			int answer = scanner.nextInt();
 			
 			boolean result = checkAnswer( answer );
+			count++;
 			if ( result ) {
 				break;
+			} else {
+				if(randomNumber - min > max - randomNumber) {
+					if(answer <= randomNumber)
+						min = answer;
+					else
+						max = answer;
+				}
+				else {
+					if(answer >= randomNumber)
+						max = answer;
+					else
+						min = answer;
+				}
 			}
-		
+			
 			System.out.println("");
 		}
-		
 		// 키보드 닫기
 		scanner.close();
 		
@@ -39,6 +52,9 @@ public class Main {
 	}
 	
 	public static boolean checkAnswer(int answer) {
-		return true;
+		if(randomNumber == answer)
+			return true;
+		else
+			return false;
 	}
 }
